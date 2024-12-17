@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+} */
+
+.title {
+  @apply text-[32px] font-primary font-bold text-primary;
+}
+
+.details {
+  @apply text-[20px] font-primary font-normal text-secondary;
+}
+.explore .slick-active .slider_items {
+  @apply duration-1000;
+}
+.explore .slick-active .slider_items {
+  @apply h-[486px] px-3;
+}
+.explore .slick-active.slick-current .slider_items {
+  @apply h-[582px];
+}
+.explore .slick-dots {
+  display: flex !important;
+  @apply gap-5;
+}
+.explore .slick-dots {
+  @apply absolute bottom-28 right-60;
+}
+.explore .slick-dots li button {
+  @apply text-[0] bg-[#D8D8D8] w-3 h-3 rounded-full duration-1000;
+}
+.explore .slick-dots .slick-active button {
+  @apply text-[0] bg-brand w-3 h-3 rounded-full relative after:w-7 after:h-7 after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:border-2 after:border-brand after:rounded-full duration-1000 animate-pulse;
+}
+
+.setup {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.setup img:first-child {
+  grid-area: 1/1/5/2;
+}
+
+.setup img:nth-child(2) {
+  grid-area: 5/1/9/3;
+}
+
+.setup img:nth-child(3) {
+  grid-area: 2/2/5/6;
+}
+
+.setup img:nth-child(4) {
+  grid-area: 1/11/6/13;
+}
+
+.setup img:nth-child(5) {
+  grid-area: 3/6/7/8;
+}
+
+.setup img:nth-child(6) {
+  grid-area: 5/3/8/6;
+}
+
+.setup img:nth-child(7) {
+  grid-area: 2/8/6/11;
+}
+.setup img:nth-child(8) {
+  grid-area: 6/8/9/10;
+}
+.setup img:nth-child(9) {
+  grid-area: 6/10/8/12;
+}

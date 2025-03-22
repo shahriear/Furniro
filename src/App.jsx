@@ -8,6 +8,7 @@ import {
 import Layout from './Components/Layout';
 import Home from './Pages/Home';
 import Shop from './Pages/Shop';
+import ErrorPage from './Components/ErrorPage';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="*" element={<ErrorPage />} />
       </Route>
     )
   );

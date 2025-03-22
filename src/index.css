@@ -78,3 +78,17 @@
 .setup img:nth-child(9) {
   grid-area: 6/10/8/12;
 }
+
+/* ============ pagination */
+.pagination li a {
+  @apply p-4 px-6 bg-[#F9F1E7] rounded-xl;
+}
+.pagination li a {
+  @apply duration-300 transition-all;
+}
+.pagination .selected a {
+  @apply bg-brand;
+}
+.pagination .previous {
+  @apply hidden;
+}

@@ -12,6 +12,11 @@ import CardSideBar from './Card/CardSideBar';
 
 const Navbar = () => {
   const [show, setshow] = useState(true);
+  const [sideCard, setSideCard] = useState(false);
+  const handelSidebar = result => {
+    setSideCard(result);
+  };
+
   return (
     <>
       <nav className="py-7 relative">
@@ -22,7 +27,7 @@ const Navbar = () => {
           <ul
             className={`absolute ${
               !show ? '-translate-x-full' : 'translate-x-0'
-            } lg:static gap-16 flex flex-col lg:flex-row w-1/2 lg:w-auto items-center font-primary text-lg font-medium text-black  top-full left-0  bg-white h-screen lg:h-auto transition-all   `}
+            } lg:static gap-16 flex flex-col lg:flex-row w-1/2 lg:w-auto items-center font-primary text-lg font-medium text-black  top-full left-0  bg-white lg:h-auto transition-all pb-20 lg:pb-0   `}
           >
             <li>
               <Link to="/">Home</Link>
@@ -54,10 +59,8 @@ const Navbar = () => {
                   <MdFavoriteBorder />
                 </Link>
               </li>
-              <li className="text-3xl">
-                <Link>
-                  <MdOutlineShoppingCart />
-                </Link>
+              <li onClick={() => setSideCard(true)}>
+                <MdOutlineShoppingCart className="text-3xl cursor-pointer" />
               </li>
             </ul>
           </div>
@@ -66,7 +69,7 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-      <CardSideBar />
+      {sideCard && <CardSideBar handelSidebar={handelSidebar} />}
     </>
   );
 };

@@ -11,11 +11,10 @@ const Slidbaritems = () => {
         <h3 className="font-primary font-normal text-base pb-3">
           Asgaard sofa
         </h3>
-        <p className="text-[#B88E2F] text-xs font-light">1 X Rs. 270,000.00</p>
+        <p className="text-[#B88E2F] text-sm font-medium">1 X Rs. 270,000.00</p>
       </div>
-      <div>
-        <RxCrossCircled className="text-2xl bg-slate-200 rounded-full cursor-pointer" />
-      </div>
+
+      <RxCrossCircled className="text-2xl bg-slate-200 rounded-full cursor-pointer" />
     </div>
   );
 };

@@ -28,9 +28,10 @@ const CardSideBar = ({ handelSidebar }) => {
           <p>Subtotal</p>
           <p className="text-brand">Rs. 520,000.00</p>
         </div>
+
         <div className="flex gap-4 justify-center items-center mt-6">
-          <CardButton path="/cart" title="cart" />
-          <CardButton path="/cart" title="checkout" />
+          <CardButton path="/cart" title="Cart" />
+          <CardButton path="/" title="Checkout" />
         </div>
       </div>
     </div>

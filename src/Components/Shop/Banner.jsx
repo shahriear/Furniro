@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <section className="flex flex-col items-center justify-center bg-[url('/bannerShop.png')] bg-cover bg-no-repeat w-full h-[316px] bg-center ">
       <div className="container ">
-        <h2 className="title pb-3 text-center">Shope</h2>
+        <h2 className="title pb-3 text-center">Shop</h2>
         <Breadcrumb />
       </div>
 

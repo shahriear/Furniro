@@ -191,4 +191,4 @@ const Details = () => {
 };
 
 export default Details;
-//videp---->>>  18
+//video---->>>  18

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="border-b pb-12 flex justify-evenly">
           <div>
-            <img src="logo.png" alt="logo" className="f" />
+            <img src="/logo.png" alt="logo" className="f" />
             <p className="w-80 details pt-12">
               400 University Drive Suite 200 Coral Gables, <br /> FL 33134 USA
             </p>

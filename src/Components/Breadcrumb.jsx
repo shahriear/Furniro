@@ -27,7 +27,7 @@ const Breadcrumb = () => {
           {path1}
         </Link>
       </li>
-      {
+      {path2 && (
         <>
           <li>
             <FaGreaterThan className="mx-2" />
@@ -38,7 +38,7 @@ const Breadcrumb = () => {
             </p>
           </li>
         </>
-      }
+      )}
     </ul>
   );
 };
